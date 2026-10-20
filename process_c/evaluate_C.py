@@ -7,7 +7,7 @@ import json
 import numpy as np
 import torch
 
-from worldc_common import DUFF, HERE, TK, T, DT, cov2, relfro, idx
+from processc_common import DUFF, HERE, TK, T, DT, cov2, relfro, idx
 import common as dc
 
 torch.set_num_threads(2)

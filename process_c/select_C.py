@@ -15,7 +15,7 @@ import json
 
 import numpy as np
 
-from worldc_common import DUFF, HERE, cov2, relfro, world_C_paths
+from processc_common import DUFF, HERE, cov2, relfro, world_C_paths
 
 Z = np.load(DUFF / "data" / "truth.npz")
 XA0, XB0 = Z["XA0"], Z["XB0"]

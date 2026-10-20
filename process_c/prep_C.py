@@ -9,8 +9,8 @@ import time
 import numpy as np
 from scipy.stats import norm
 
-from worldc_common import DUFF, HERE, TK, CFG, DT, T, cov2, relfro, world_C_paths, idx
-import common as dc   # duffing/common.py (path set in worldc_common)
+from processc_common import DUFF, HERE, TK, CFG, DT, T, cov2, relfro, world_C_paths, idx
+import common as dc   # duffing/common.py (path set in processc_common)
 
 t0 = time.time()
 D = HERE / "data"; D.mkdir(exist_ok=True)
@@ -83,7 +83,7 @@ v["epsC"] = {"C_vs_A": relfro(CC, CA), "C_vs_B": relfro(CC, CB), "A_vs_C": relfr
              "A_vs_B": relfro(CA, CB), "B_vs_A": relfro(CB, CA),
              "noise_Ab_vs_A": relfro(CAb, CA), "noise_Cb_vs_C": relfro(CCb, CC)}
 # rank correlation check: empirical corr of Phi^{-1}(U) at lag d vs exp(-d/tau) cos(Omega d)
-from worldc_common import rank_paths  # noqa: E402
+from processc_common import rank_paths  # noqa: E402
 U = rank_paths(20000, idx(8.0), DT, TAU, OM, seed=11)
 Y = norm.ppf(np.clip(U, 1e-12, 1 - 1e-12))
 v["rank_corr_check"] = [dict(d=d, empirical=float(np.corrcoef(Y[0], Y[idx(d)])[0, 1]),
