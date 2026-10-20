@@ -1,0 +1,30 @@
+hsiao mmn 0 2
+hsiao td 0
+hsiao mmn 0 0
+hsiao cfm 0
+hsiao mmn 0 1
+hsiao mmn 1 2
+hsiao td 1
+hsiao mmn 1 0
+hsiao cfm 1
+hsiao mmn 1 1
+hsiao mmn 2 2
+hsiao td 2
+hsiao mmn 2 0
+hsiao cfm 2
+hsiao mmn 2 1
+mahd mmn 0 2
+mahd td 0
+mahd mmn 0 0
+mahd cfm 0
+mahd mmn 0 1
+mahd mmn 1 2
+mahd td 1
+mahd mmn 1 0
+mahd cfm 1
+mahd mmn 1 1
+mahd mmn 2 2
+mahd td 2
+mahd mmn 2 0
+mahd cfm 2
+mahd mmn 2 1

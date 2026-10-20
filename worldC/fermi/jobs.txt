@@ -1,0 +1,26 @@
+# world C: 4 classes x 5 seeds (args of duffing train.py: WORLD EXPS METHOD SEED [DH])
+C 0 mmn 0 2
+C 0 td 0
+C 0 cfm 0
+C 0 sb 0
+C 0 mmn 1 2
+C 0 td 1
+C 0 cfm 1
+C 0 sb 1
+C 0 mmn 2 2
+C 0 td 2
+C 0 cfm 2
+C 0 sb 2
+C 0 mmn 3 2
+C 0 td 3
+C 0 cfm 3
+C 0 sb 3
+C 0 mmn 4 2
+C 0 td 4
+C 0 cfm 4
+C 0 sb 4
+# linear-Gaussian overlay (task 2, optional): lifted d_h=2 and obs-TD, seeds 0-1
+L 0 mmn 0 2
+L 0 td 0
+L 0 mmn 1 2
+L 0 td 1

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.npy
+*.npz
+*.pt
+logs/
+*/data/
+paper_figs/out/
+paper_figs/data/
+.env

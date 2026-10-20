@@ -1,0 +1,117 @@
+A 0 td 1
+A 0 mmn 1 2
+A 0 mmn 1 4
+A 0 mmn 1 1
+A 0 mmn 1 0
+A 0 cfm 1
+A 0 sb 1
+A 0 ref 1
+A 0 td 2
+A 0 mmn 2 2
+A 0 mmn 2 4
+A 0 mmn 2 1
+A 0 mmn 2 0
+A 0 cfm 2
+A 0 sb 2
+A 0 ref 2
+A 0 td 3
+A 0 mmn 3 2
+A 0 mmn 3 4
+A 0 mmn 3 1
+A 0 mmn 3 0
+A 0 cfm 3
+A 0 sb 3
+A 0 ref 3
+A 0 td 4
+A 0 mmn 4 2
+A 0 mmn 4 4
+A 0 mmn 4 1
+A 0 mmn 4 0
+A 0 cfm 4
+A 0 sb 4
+A 0 ref 4
+B 0 td 0
+B 0 mmn 0 2
+B 0 mmn 0 1
+B 0 mmn 0 0
+B 0 cfm 0
+B 0 sb 0
+B 0 td 1
+B 0 mmn 1 2
+B 0 mmn 1 1
+B 0 mmn 1 0
+B 0 cfm 1
+B 0 sb 1
+B 0 td 2
+B 0 mmn 2 2
+B 0 mmn 2 1
+B 0 mmn 2 0
+B 0 cfm 2
+B 0 sb 2
+B 0 td 3
+B 0 mmn 3 2
+B 0 mmn 3 1
+B 0 mmn 3 0
+B 0 cfm 3
+B 0 sb 3
+B 0 td 4
+B 0 mmn 4 2
+B 0 mmn 4 1
+B 0 mmn 4 0
+B 0 cfm 4
+B 0 sb 4
+A 01 tdlab 0
+A 01 tdsh 0
+A 01 mmn 0 2
+A 01 mmn 0 1
+A 01 cfm 0
+A 01 sb 0
+A 01 tdlab 1
+A 01 tdsh 1
+A 01 mmn 1 2
+A 01 mmn 1 1
+A 01 cfm 1
+A 01 sb 1
+A 01 tdlab 2
+A 01 tdsh 2
+A 01 mmn 2 2
+A 01 mmn 2 1
+A 01 cfm 2
+A 01 sb 2
+A 01 tdlab 3
+A 01 tdsh 3
+A 01 mmn 3 2
+A 01 mmn 3 1
+A 01 cfm 3
+A 01 sb 3
+A 01 tdlab 4
+A 01 tdsh 4
+A 01 mmn 4 2
+A 01 mmn 4 1
+A 01 cfm 4
+A 01 sb 4
+B 01 tdlab 0
+B 01 tdsh 0
+B 01 mmn 0 2
+B 01 cfm 0
+B 01 sb 0
+B 01 tdlab 1
+B 01 tdsh 1
+B 01 mmn 1 2
+B 01 cfm 1
+B 01 sb 1
+B 01 tdlab 2
+B 01 tdsh 2
+B 01 mmn 2 2
+B 01 cfm 2
+B 01 sb 2
+B 01 tdlab 3
+B 01 tdsh 3
+B 01 mmn 3 2
+B 01 cfm 3
+B 01 sb 3
+B 01 tdlab 4
+B 01 tdsh 4
+B 01 mmn 4 2
+B 01 cfm 4
+B 01 sb 4

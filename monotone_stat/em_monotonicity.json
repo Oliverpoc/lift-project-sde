@@ -1,0 +1,27 @@
+{
+ "A0_mmn0_s0": {
+  "min_slope": -1.7980448007583618,
+  "frac_grid_slope_neg": 0.043833333333333335,
+  "max_abs_drift": 5.0
+ },
+ "A0_mmn0_s1": {
+  "min_slope": -2.408470392227173,
+  "frac_grid_slope_neg": 0.042333333333333334,
+  "max_abs_drift": 5.0
+ },
+ "A0_mmn0_s2": {
+  "min_slope": -2.249239921569824,
+  "frac_grid_slope_neg": 0.042833333333333334,
+  "max_abs_drift": 5.0
+ },
+ "A0_mmn0_s3": {
+  "min_slope": -2.0637965202331543,
+  "frac_grid_slope_neg": 0.0435,
+  "max_abs_drift": 5.0
+ },
+ "A0_mmn0_s4": {
+  "min_slope": -2.2579259872436523,
+  "frac_grid_slope_neg": 0.043833333333333335,
+  "max_abs_drift": 5.0
+ }
+}

@@ -1,0 +1,25 @@
+A 01 mmnc 0 2
+A 01 mmnc 1 2
+A 01 mmnc 2 2
+A 01 mmnc 3 2
+A 01 mmnc 4 2
+A 1 td 0
+A 1 td 1
+A 1 td 2
+A 1 td 3
+A 1 td 4
+A 1 mmn 0 2
+A 1 mmn 1 2
+A 1 mmn 2 2
+A 1 mmn 3 2
+A 1 mmn 4 2
+A 01 sbsh 0
+A 01 sbsh 1
+A 01 sbsh 2
+A 01 sbsh 3
+A 01 sbsh 4
+A 1 sb 0
+A 1 sb 1
+A 1 sb 2
+A 1 sb 3
+A 1 sb 4
