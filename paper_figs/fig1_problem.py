@@ -23,6 +23,10 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 from pf_common import COLW, DUF, HERE, LAB, OUT, PAL, duf, panel_label, save, style
 
 style()
+# Times text and maths through LaTeX, to match the paper body (\usepackage{times})
+plt.rcParams.update({"text.usetex": True, "font.serif": ["Times"],
+                     "text.latex.preamble": r"\usepackage{amsmath}\usepackage{amssymb}\usepackage{bm}"
+                                            r"\usepackage{newtxtext}\usepackage{newtxmath}"})
 T = 15.0
 Z = np.load(HERE / "data" / "twotime_duffing.npz")
 t, d = Z["t"], Z["d"]
