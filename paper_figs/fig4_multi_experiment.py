@@ -43,7 +43,7 @@ ax.plot(TK, DUF_DIST["W2_A0_vs_B0_at_tk"], "s--", color="0.45", ms=3.0, lw=1.0, 
 ax.plot(TK, DUF_DIST["W2_A1_vs_A1b_noise_at_tk"], ":", color="0.0", lw=1.2, label=r"noise floor")
 ax.set_yscale("log"); ax.set_xlabel(r"$t$"); ax.set_ylabel(r"$W_2(p^A_t,p^B_t)$"); ax.set_xlim(-0.5, 15.5)
 ax.set_ylim(1e-8, 2.0); ax.set_yticks([1e-6, 1e-4, 1e-2, 1e0])
-ax.legend(loc="lower right", fontsize=7.6, handlelength=2.0, borderaxespad=0.1, labelspacing=0.2)
+ax.legend(loc="lower right", bbox_to_anchor=(0.95, 0.07), fontsize=7.6, handlelength=2.0, borderaxespad=0.1, labelspacing=0.2)
 print("max W2 mu1:", round(DUF_DIST["W2_A1_vs_B1_max"], 3), "noise max:", round(DUF_DIST["W2_A1_vs_A1b_noise_max"], 4),
       "ratio:", round(DUF_DIST["W2_A1_vs_B1_max"] / DUF_DIST["W2_A1_vs_A1b_noise_max"], 1))
 panel_label(ax, "a", dx=-0.25, dy=1.02)

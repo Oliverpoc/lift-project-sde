@@ -109,7 +109,7 @@ for j in rng.choice(n, 7, replace=False):
 for i, c in ((0, C0), (nst, CK)):
     sx, sy = scr(P[i, :, 0], P[i, :, 1])
     ax.scatter(sx, sy, s=1.2, color=c, lw=0, alpha=0.7, zorder=3, rasterized=True)
-ax.text(*scr(-1.25, 0.95), r"$z_0$", fontsize=FS, ha="center", va="center", color=C0)
+ax.text(*scr(-1.85, -0.55), r"$z_0$", fontsize=FS, ha="center", va="center", color=C0)
 ax.text(*scr(2.3, -0.25), r"$z(t_k)$", fontsize=FS, ha="left", va="center", color=CK)
 ax.text(*scr(0.55, 2.15), r"\textbf{autonomous SDE}: $\mathrm{d}z=f_\theta(z)\,\mathrm{d}t+g_\theta(z)\,\mathrm{d}W$",
         fontsize=FS, ha="center", va="bottom", color=PAL["lp"])
