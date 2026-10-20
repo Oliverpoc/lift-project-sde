@@ -132,7 +132,7 @@ def main():
     }
     # same lower bound for the Duffing world A (sampled truth, duffing/data/truth.npz) -- context for obs-TD's 0.94
     try:
-        sys.path.insert(0, str(HERE.parent / "worldC"))
+        sys.path.insert(0, str(HERE.parent / "process_c"))
         from worldc_common import DUFF, cov2, MASK_IN
         XA0 = np.load(DUFF / "data" / "truth.npz")["XA0"]
         CDA = cov2(XA0)

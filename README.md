@@ -12,7 +12,7 @@ This repository contains the experiments and the scripts that draw every figure 
 |---|---|---|
 | `duffing/` | Experiments (Duffing) | Stochastic Duffing oscillator, position observed: data, training of all model classes, evaluation, processes A and B |
 | `pendulum/` | Experiments (pendulum) | Damped pendulum, angle observed |
-| `worldC/` | Stable coupling across marginal-equivalent data | Process C (same snapshots as A, different time correlation): parameter selection, data, evaluation |
+| `process_c/` | Stable coupling across marginal-equivalent data | Process C (same snapshots as A, different time correlation): parameter selection, data, evaluation |
 | `shared/` | A second experiment | Shared versus experiment-conditioned dynamics under two initial distributions |
 | `linear_gaussian/` | Exact linear-Gaussian example | Closed-form example with no neural optimization |
 | `monotone_stat/` | Hidden state and negative association | Lagged Spearman rank correlation of the stored models; Euler–Maruyama monotonicity check |
@@ -67,7 +67,7 @@ python evaluate.py aggregate                # -> results.json, eval_store.npz
 python gate.py                              # -> gate.json
 ```
 
-**Process C** (`worldC/`, after the Duffing steps)
+**Process C** (`process_c/`, after the Duffing steps)
 ```
 python select_C.py                          # choose (tau, Omega) before any training on C
 python prep_C.py                            # snapshots, bridge pairs and truth for process C

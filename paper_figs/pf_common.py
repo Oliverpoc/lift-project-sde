@@ -4,7 +4,7 @@ Every number plotted here is read from stored results of the pre-registered runs
   duffing/results.json, duffing/data/{truth.npz,distinguishability.json},
   duffing/runs/<tag>/store.npz,
   pendulum/gate.json (summary block), pendulum/eval_store.npz,
-  worldC/results.json (process-C test), linear_gaussian/results.json (exact Gaussian example).
+  process_c/results.json (process-C test), linear_gaussian/results.json (exact Gaussian example).
 Nothing is re-trained or re-evaluated. Figures are written as PNG + EPS (never PDF)
 to paper_figs/out/.
 """
@@ -92,12 +92,12 @@ def pen_store_median(pattern):
 
 
 # ----------------------------------------------------------------------------- process C (third coupling)
-WC = L4DC / "worldC"
+WC = L4DC / "process_c"
 WC_R = json.loads((WC / "results.json").read_text())
 
 
 def wc(group, metric):
-    """Per-seed eps_C of a process-C study group (worldC/results.json -> groups; A0_*/B0_* are the reused Duffing runs)."""
+    """Per-seed eps_C of a process-C study group (process_c/results.json -> groups; A0_*/B0_* are the reused Duffing runs)."""
     return np.array(WC_R["groups"][group][metric]["per_seed"])
 
 

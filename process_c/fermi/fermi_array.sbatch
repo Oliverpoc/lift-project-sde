@@ -1,9 +1,9 @@
 #!/bin/bash
 # Fermi Slurm array: one training run per non-comment line of jobs.txt (world C + linear-Gaussian overlay, L4DC).
-# Uses the UNCHANGED duffing train.py / common.py.  Submit from worldC/ after copying
+# Uses the UNCHANGED duffing train.py / common.py.  Submit from process_c/ after copying
 # ../duffing/train.py and ../duffing/common.py into it (prep_C.py has written data/ there):
 #   sbatch --array=1 fermi_array.sbatch      (test task)   then   sbatch --array=2-24 fermi_array.sbatch
-#SBATCH -J l4dc_worldC
+#SBATCH -J l4dc_process_c
 #SBATCH -p cpu
 #SBATCH -c 2
 #SBATCH --mem=3G

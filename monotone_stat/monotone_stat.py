@@ -64,7 +64,7 @@ def lower_bound(v):
 # ------------------------------------------------------------------ truths ---
 if SYS == "duffing":
     Z = np.load(ROOT / "data" / "truth.npz")
-    ZC = np.load(HERE.parent / "worldC" / "data" / "truth_C.npz")
+    ZC = np.load(HERE.parent / "process_c" / "data" / "truth_C.npz")
     worlds = dict(A=Z["XA0"], B=Z["XB0"], C=ZC["XC0"], A_indep=Z["XA0b"])
     x0 = Z["XA0"][0]
 else:
@@ -88,7 +88,7 @@ print({k: {kk: round(vv, 4) for kk, vv in v.items() if isinstance(vv, float)} fo
 if SYS == "duffing":
     groups = {f"{w}0_{c}": ROOT / "runs" for w in "A" for c in ("mmn0", "mmn1", "mmn2", "mmn4", "td", "sb", "cfm")}
     groups.update({f"B0_{c}": ROOT / "runs" for c in ("mmn2", "td", "sb", "cfm")})
-    groups.update({f"C0_{c}": HERE.parent / "worldC" / "runs" for c in ("mmn2", "td", "sb", "cfm")})
+    groups.update({f"C0_{c}": HERE.parent / "process_c" / "runs" for c in ("mmn2", "td", "sb", "cfm")})
 else:
     groups = {g: ROOT / "runs" for g in ("mmn_dh0", "mmn_dh1", "mmn_dh2", "mmn_dh4", "td", "tdw", "cfm")}
 

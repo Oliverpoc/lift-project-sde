@@ -8,7 +8,7 @@
       (the paper's eps_C grid uses t + d <= T).
 Sources (no re-simulation):
   duffing/data/truth.npz   tg, XA0 (process A, 4000 evaluation paths), XB0 (process B, 4000 paths); duffing/prep.py
-  worldC/data/truth_C.npz  XC0 (process C, 4000 paths, tau = 20, Omega = 2); worldC/prep_C.py
+  process_c/data/truth_C.npz  XC0 (process C, 4000 paths, tau = 20, Omega = 2); process_c/prep_C.py
 usage: python figC_worlds_data.py   -> out/figC_worlds_data.{png,eps}
 """
 import matplotlib.pyplot as plt
@@ -21,7 +21,7 @@ from pf_common import COLW, L4DC, OUT, panel_label, save, style
 style()
 T, DT, DMAX = 15.0, 0.1, 8.0
 Z = np.load(L4DC / "duffing/data/truth.npz")
-ZC = np.load(L4DC / "worldC/data/truth_C.npz")
+ZC = np.load(L4DC / "process_c/data/truth_C.npz")
 tg = Z["tg"]
 W = {"A": Z["XA0"], "B": Z["XB0"], "C": ZC["XC0"]}
 print("process C parameters: tau =", int(ZC["tau"]), " Omega =", float(ZC["Omega"]))

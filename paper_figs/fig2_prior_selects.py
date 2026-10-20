@@ -10,7 +10,7 @@ Colour: author-approved exception to greyscale-first; class palette pf_common.PA
 markers also differ per class.
 Sources: duffing/results.json (groups A0_*, B0_*: M2_in, M2_in_vsB per seed), duffing/data/truth.npz (process
 A/B reference distance); pendulum/gate.json summary (M2_in, M2_in_vs_worldB), pendulum/eval_store.npz (C_true, C_B);
-worldC/results.json (groups {A0,B0,C0}_{mmn2,td,cfm,sb}: dA, dB per seed; world_C.verification.epsC).
+process_c/results.json (groups {A0,B0,C0}_{mmn2,td,cfm,sb}: dA, dB per seed; world_C.verification.epsC).
 usage: python fig2_prior_selects.py   -> out/fig2_prior_selects.{png,eps}
 """
 import matplotlib.pyplot as plt
