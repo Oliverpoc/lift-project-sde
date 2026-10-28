@@ -55,8 +55,8 @@ SHR_V = json.loads((SHR / "verdict.json").read_text())
 CLS = [("MMN", "mmn2", "mmn2", "mmnc2", r"lift--project", "lp"), ("obs-TD", "td", "tdsh", "tdlab", r"obs-TD", "td"),
        ("SB", "sb", "sbsh", "sb", r"SB", "sb")]
 # condition: (key, label, face (open / class colour / light tint), x offset); the class sets colour and marker shape
-CONDS = [("mu0", r"$\mu_0$ only", "open", -0.26), ("sh", r"$\mu_0{+}\mu_1$ shared", "full", 0.0),
-         ("c", r"$\mu_0{+}\mu_1$ conditioned", "tint", 0.26)]
+CONDS = [("mu0", r"$\mu_0$ only", "open", -0.26), ("sh", r"$\mu_0{+}\mu_1$, common", "full", 0.0),
+         ("c", r"$\mu_0{+}\mu_1$, per-experiment", "tint", 0.26)]
 
 
 def shr(tag, key):
