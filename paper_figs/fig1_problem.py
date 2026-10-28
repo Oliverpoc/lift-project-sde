@@ -136,7 +136,7 @@ sx, sy = scr(xb, -0.45)
 ax.add_patch(FancyArrowPatch((sx, sy), (xb, Y0 + HD + 0.08), arrowstyle="-|>", mutation_scale=8, lw=1.0,
                              ls=(0, (3, 1.5)), color=CK, zorder=4))
 ax.text(xb + 0.42, 0.32, r"project $\pi_x$", fontsize=FS, ha="left", va="center", color=CK)
-ax.text(0.1, Y0 - 0.24, r"loss: $\sum_k W_2^2$(projected marginal, snapshot data $|$); $h$ never enters it",
+ax.text(0.1, Y0 - 0.24, r"loss: $\sum_k W_2^2$(projected marginal, snapshot data); $h$ never enters it",
         fontsize=FS, ha="center", va="top")
 ax.set_xlim(-2.75, 3.05); ax.set_ylim(-1.0, 3.25)
 panel_label(ax, "b", dx=0.02, dy=0.93)

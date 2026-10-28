@@ -12,10 +12,9 @@ This repository contains the experiments and the scripts that draw every figure 
 |---|---|---|
 | `duffing/` | Experiments (Duffing) | Stochastic Duffing oscillator, position observed: data, training of all model classes, evaluation, processes A and B |
 | `pendulum/` | Experiments (pendulum) | Damped pendulum, angle observed |
-| `process_c/` | Stable coupling across marginal-equivalent data | Process C (same snapshots as A, different time correlation): parameter selection, data, evaluation |
+| `process_c/` | Appendix: training on marginal-equivalent data | Process C (same snapshots as A, different time correlation): parameter selection, data, evaluation |
 | `shared/` | A second experiment | Shared versus experiment-conditioned dynamics under two initial distributions |
-| `linear_gaussian/` | Exact linear-Gaussian example | Closed-form example with no neural optimization |
-| `monotone_stat/` | Hidden state and negative association | Lagged Spearman rank correlation of the stored models; Euler–Maruyama monotonicity check |
+| `monotone_stat/` | Lagged covariance at comparable marginal fit | Lagged Spearman rank correlation of the stored models; Euler–Maruyama monotonicity check |
 | `fucci/` | Single-cell case study | FUCCI cell-cycle data (GSE121265, GSE146773): preprocessing, training, evaluation, static readout |
 | `paper_figs/` | All figures | One script per figure; `pf_common.py` holds shared loaders and style |
 | `plotstyle.py` | — | Figure style (LaTeX text, no grid, PNG + EPS output) |
@@ -76,8 +75,6 @@ python evaluate_C.py                        # -> results.json
 ```
 
 **Shared versus conditioned dynamics** (`shared/`): `python run_jobs.py jobs.txt 4`, then `python evaluate.py TAG` for each run and `python aggregate.py`.
-
-**Linear-Gaussian example** (`linear_gaussian/`): `python lg_exact.py` gives the exact results; `prep_L.py` and `evaluate_L.py` add the optional neural overlay.
 
 **Rank statistics** (`monotone_stat/`): `python monotone_stat.py duffing` and `python monotone_stat.py pendulum` after the runs are evaluated.
 
