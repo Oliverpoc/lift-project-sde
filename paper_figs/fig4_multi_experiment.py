@@ -77,8 +77,8 @@ for i, (cl, t0, tsh, tc, lab, pk) in enumerate(CLS):
         # (c) lagged-covariance error under mu0: seeds (jittered) and seed median
         v = shr(tags[key], "epsC_0")
         assert abs(v.mean() - SHR_R[f"{cl}|{key}"]["epsC_0_mean"]) < 1e-12
-        axc.plot(x + rng.uniform(-0.05, 0.05, v.size), v, MK[pk], ms=2.6, mfc=face(fk, col), mec=col, mew=0.7, ls="")
-        axc.plot([x - 0.1, x + 0.1], [np.median(v)] * 2, "-", color=col, lw=1.8, solid_capstyle="butt")
+        axc.bar(x, np.median(v), width=0.25, color=face(fk, col), edgecolor=col, lw=0.9, zorder=2)
+        axc.plot(x + rng.uniform(-0.06, 0.06, v.size), v, "o", ms=1.9, mfc="0.15", mec="none", ls="", zorder=3)
         if key == "mu0":
             continue
         # (b) marginal fit with two experiments relative to single-experiment training, worse of the two experiments
@@ -98,7 +98,13 @@ for ax in (axb, axc):
         tl.set_color(PAL[c[5]])
     ax.tick_params(axis="x", which="both", top=False, bottom=False)
     ax.set_xlim(-0.5, 2.5)
-axc.set_ylim(0.0, 2.2); axc.set_yticks([0, 0.5, 1, 1.5, 2])
+# error floor of Corollary 4 for every diffusion Markov in x (Duffing, mu_0); grey: values such models can reach
+FL = json.loads((L4DC / "monotone_stat" / "results_duffing.json").read_text())["worlds"]["A"]["lower_bound_cov"]
+print("Duffing floor", round(FL, 3))
+axc.axhline(FL, color="0.0", lw=0.9, ls="--", zorder=1)
+axc.axhspan(FL, 1.6, color="0.93", lw=0, zorder=-6)
+axc.text(-0.45, FL + 0.03, r"floor", ha="left", va="bottom", fontsize=7.4)
+axc.set_ylim(0.0, 1.6); axc.set_yticks([0, 0.5, 1, 1.5])
 axc.set_ylabel(r"$\epsilon_C$ under $\mu_0$")
 panel_label(axb, "b", dx=-0.24, dy=1.02)
 panel_label(axc, "c", dx=-0.24, dy=1.02)
