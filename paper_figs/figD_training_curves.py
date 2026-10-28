@@ -75,7 +75,7 @@ for ax, (system, groups), L in zip(axs, SYS.items(), "ab"):
     ax.set_xlabel(r"$n$")
     ax.set_ylabel(r"$\mathcal{L}/k_{\max}$")
     panel_label(ax, L, dx=-0.16, dy=1.03)
-axs[0].set_title(r"Duffing (process A)", fontsize=8.5)
+axs[0].set_title(r"Duffing", fontsize=8.5)
 axs[1].set_title(r"pendulum", fontsize=8.5)
 h, l = axs[0].get_legend_handles_labels()
 order = [2, 4, 3, 0, 1]
