@@ -144,7 +144,7 @@ panel_label(ax, "b", dx=0.02, dy=0.93)
 # ============================================================================ (c) two-time covariance heat maps
 vmax = np.abs(Z["C_truth"]).max()
 norm = TwoSlopeNorm(0.0, -vmax, vmax)
-panels = [("truth", r"truth (process A)", Z["C_truth"], None, "truth")]
+panels = [("truth", r"truth", Z["C_truth"], None, "truth")]
 for g, key in (("A0_mmn2", "lp"), ("A0_td", "td"), ("A0_cfm", "cfm")):
     s, e = median_seed(g)
     panels.append((g, LAB[key], Z[f"C_{g}_s{s}"], e, key))

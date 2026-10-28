@@ -35,7 +35,7 @@ nt = Normalize(0, T)
 
 QS = (0.1, 0.5, 0.9)
 STY = [dict(ls="-", lw=1.0), dict(ls=(0, (4, 1.6)), lw=1.0), dict(ls=(0, (1, 1.2)), lw=1.3)]
-PROC = [("XA0", r"process A (true): paths cross"), ("XB0", r"process B: ranks preserved")]
+PROC = [("XA0", r"true process: paths cross"), ("XB0", r"process B: ranks preserved")]
 
 fig, axes = plt.subplots(1, 2, figsize=(COLW, 2.35), sharey=True,
                          gridspec_kw=dict(wspace=0.08, left=0.075, right=0.985, top=0.9, bottom=0.17))

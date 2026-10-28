@@ -133,7 +133,7 @@ for j, (m, ylab, fl, ylim) in enumerate(PANELS):
 
 # ------------------------------------------------------------------ class legend (shared)
 order = ["lp", "th", "td", "tdw", "sb", "cfm"]
-h = [Line2D([], [], color="0.0", lw=1.3, ls=(0, (4, 1.5)), label=r"truth (process A)")]
+h = [Line2D([], [], color="0.0", lw=1.3, ls=(0, (4, 1.5)), label=r"truth")]
 h += [Line2D([], [], color=PAL[k], lw=(2.0 if k == "lp" else 1.2), ls=("--" if k in ("th", "tdw") else "-"),
              marker=MK[k], ms=4, mfc=PAL[k], mec="white", mew=0.35, label=LAB[k]) for k in order]
 fig.legend(handles=h, loc="upper center", ncol=7, fontsize=7.6, handlelength=1.9, columnspacing=0.9,
